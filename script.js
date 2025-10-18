@@ -25,7 +25,7 @@ async function getOrgInfo() {
   chat.innerHTML += `<div class="bot">Бот: <br>${info}</div>`;
 
   // Отправляем на сервер для общения с IO API
-  const aiRes = await fetch("https://inn-chat-ai.onrender.com/api/io", {
+  const aiRes = await fetch("https://inn-chat-ai.onrender.com", {
     method: "POST",
     headers: { "Content-Type": "application/json" },
     body: JSON.stringify({ org })
